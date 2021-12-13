@@ -1,9 +1,13 @@
-tahun = int(input())
-if tahun % 400 == 0:
-    print("Kabisat")
-if tahun % 400 != 0 and tahun % 100 == 0 :
-    print("Bukan Kabisat")
-if tahun % 400 != 0 and tahun % 100 != 0 and tahun % 4 ==0 :
-    print("Kabisat")
-else:
-    print("Bukan Kabisat")
+def angka_sama(angka): 
+    lisa = []
+    for i in angka:   
+        jumlah = angka.count(i)
+        if jumlah == 1:
+            lisa.append(i)   
+    return lisa
+            
+a = input()
+b = angka_sama(a)
+lisi = list(map(int,b))
+
+print(lisi)
